@@ -32,6 +32,6 @@ $(call inherit-product, device/tp-link/tp904a/device.mk)
 PRODUCT_NAME := omni_tp904a
 PRODUCT_DEVICE := tp904a
 PRODUCT_BRAND := Neffos
-PRODUCT_MODEL := Neffos X1
+PRODUCT_MODEL := Neffos X1 Lite
 PRODUCT_MANUFACTURER := TP-LINK
 PRODUCT_LOCALES := ru_RU
