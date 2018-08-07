@@ -1,1 +1,1 @@
-add_lunch_combo omni_tp902a-userdebug
+add_lunch_combo omni_tp904a-userdebug
