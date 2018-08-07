@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/tp-link/tp902a
+LOCAL_PATH := device/tp-link/tp904a
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
@@ -25,13 +25,13 @@ endif
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, device/tp-link/tp902a/device.mk)
+$(call inherit-product, device/tp-link/tp904a/device.mk)
 
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_tp902a
-PRODUCT_DEVICE := tp902a
+PRODUCT_NAME := omni_tp904a
+PRODUCT_DEVICE := tp904a
 PRODUCT_BRAND := Neffos
 PRODUCT_MODEL := Neffos X1
 PRODUCT_MANUFACTURER := TP-LINK
-PRODUCT_LOCALES := en_US
+PRODUCT_LOCALES := ru_RU
