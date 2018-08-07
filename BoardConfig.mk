@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# https://forum.xda-developers.com/android/software/twrp-flags-boardconfig-mk-t3333970
-# http://rootzwiki.com/topic/23903-how-to-compile-twrp-from-source/
-
 LOCAL_PATH := device/tp-link/tp904a
 
 ### Platform
@@ -26,7 +23,7 @@ TARGET_NO_BOOTLOADER := false
 
 TARGET_BOARD_PLATFORM := mt6750
 TARGET_BOARD_PLATFORM_GPU := Mali-T860
-TARGET_BOOTLOADER_BOARD_NAME := mt6750
+TARGET_BOOTLOADER_BOARD_NAME := Neffos_X1_Lite
 TARGET_IS_64_BIT := true
 TARGET_BOARD_SUFFIX := _64
 # Set "TARGET_USES_64_BIT_BINDER" to use 64bit binder IPC on ARMv8. Make sure this variable is set
@@ -227,6 +224,7 @@ TW_THEME := portrait_hdpi
 # don't show their serial number in that file and the "Serial" entry shows "0000000000000000". By
 # using this flag, TWRP will use "ro.product.model" as the folder name instead.
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_DEVICE_VERSION := by uznaikaz
 # Remove the ability to encrypt backups with a password
 TW_EXCLUDE_ENCRYPTED_BACKUPS := false
 # The backup of /data/ doesn't include the /data/media/ directory, which contains a lot of user's
