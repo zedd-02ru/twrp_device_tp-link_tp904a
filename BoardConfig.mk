@@ -17,16 +17,16 @@
 # https://forum.xda-developers.com/android/software/twrp-flags-boardconfig-mk-t3333970
 # http://rootzwiki.com/topic/23903-how-to-compile-twrp-from-source/
 
-LOCAL_PATH := device/tp-link/tp902a
+LOCAL_PATH := device/tp-link/tp904a
 
 ### Platform
 # TARGET_NO_BOOTLOADER tells TWRP, that the phone doesn't have a fastboot mode. If you set this
 # flag to true, TWRP will hide the "Reboot to Bootloader/Fastboot" Button
 TARGET_NO_BOOTLOADER := false
 
-TARGET_BOARD_PLATFORM := mt6755
+TARGET_BOARD_PLATFORM := mt6750
 TARGET_BOARD_PLATFORM_GPU := Mali-T860
-#TARGET_BOOTLOADER_BOARD_NAME :=
+TARGET_BOOTLOADER_BOARD_NAME := mt6750
 TARGET_IS_64_BIT := true
 TARGET_BOARD_SUFFIX := _64
 # Set "TARGET_USES_64_BIT_BINDER" to use 64bit binder IPC on ARMv8. Make sure this variable is set
@@ -78,7 +78,7 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 #TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
 #TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
 
-TARGET_OTA_ASSERT_DEVICE := tp902a,X1
+TARGET_OTA_ASSERT_DEVICE := tp904a,X1_lite
 
 ### Kernel
 BOARD_KERNEL_BASE         := 0x40078000
@@ -163,8 +163,8 @@ TW_DEFAULT_BRIGHTNESS := 10
 #TW_NO_SCREEN_BLANK := false
 TW_NEVER_UNMOUNT_SYSTEM := false
 # Set to true in order to enable localization
-TW_EXTRA_LANGUAGES := true
-TW_DEFAULT_LANGUAGE := en
+#TW_EXTRA_LANGUAGES := true
+TW_DEFAULT_LANGUAGE := ru
 # Exclude SuperSu e.g. to save some space or for different other reasons
 TW_EXCLUDE_SUPERSU := false
 # Removes the "Bootloader" button from the "Reboot" menu
@@ -219,7 +219,7 @@ RECOVERY_SDCARD_ON_DATA := true
 #   landscape_mdpi = 800x480 1024x600 1024x768
 #   landscape_hdpi = 1280x800 1920x1200 2560x1600
 TW_THEME := portrait_hdpi
-TWRP_NEW_THEME := true
+#TWRP_NEW_THEME := true
 #TW_CUSTOM_THEME  := /some/path/
 
 ### Backup
