@@ -23,7 +23,7 @@ TARGET_NO_BOOTLOADER := false
 
 TARGET_BOARD_PLATFORM := mt6750
 TARGET_BOARD_PLATFORM_GPU := Mali-T860
-TARGET_BOOTLOADER_BOARD_NAME := Neffos_X1_Lite
+TARGET_BOOTLOADER_BOARD_NAME := mt6750
 TARGET_IS_64_BIT := true
 TARGET_BOARD_SUFFIX := _64
 # Set "TARGET_USES_64_BIT_BINDER" to use 64bit binder IPC on ARMv8. Make sure this variable is set
@@ -174,7 +174,7 @@ TW_NEVER_UNMOUNT_SYSTEM := false
 #TW_EXTRA_LANGUAGES := true
 TW_DEFAULT_LANGUAGE := ru
 # Exclude SuperSu e.g. to save some space or for different other reasons
-TW_EXCLUDE_SUPERSU := false
+TW_EXCLUDE_SUPERSU := true
 # Removes the "Bootloader" button from the "Reboot" menu
 TW_NO_REBOOT_BOOTLOADER := false
 # Removes the "Recovery" button from the Reboot menu
@@ -184,7 +184,7 @@ TW_NO_REBOOT_RECOVERY := false
 TW_NO_USB_STORAGE := false
 # Add an option in the "Reboot" menu to reboot into Download Mode (for Samsung devices)
 TW_HAS_DOWNLOAD_MODE := false
-#TW_NO_BATT_PERCENT := false
+TW_NO_BATT_PERCENT := false
 # Some devices don't have a temp sensor. Disable in such case to stop spamming the recovery log
 TW_NO_CPU_TEMP := false
 
