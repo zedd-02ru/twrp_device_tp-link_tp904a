@@ -169,7 +169,10 @@ TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 10
 #TW_NO_SCREEN_TIMEOUT := false
 #TW_NO_SCREEN_BLANK := false
-TW_NEVER_UNMOUNT_SYSTEM := false
+#--------zedd
+TW_SCREEN_BLANK_ON_BOOT := true
+#--------zedd
+#TW_NEVER_UNMOUNT_SYSTEM := false
 # Set to true in order to enable localization
 #TW_EXTRA_LANGUAGES := true
 TW_DEFAULT_LANGUAGE := ru
