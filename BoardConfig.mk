@@ -187,6 +187,7 @@ TW_NO_USB_STORAGE := false
 # Add an option in the "Reboot" menu to reboot into Download Mode (for Samsung devices)
 TW_HAS_DOWNLOAD_MODE := false
 TW_NO_BATT_PERCENT := false
+TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/battery/power_supply/battery
 # Some devices don't have a temp sensor. Disable in such case to stop spamming the recovery log
 TW_NO_CPU_TEMP := false
 
